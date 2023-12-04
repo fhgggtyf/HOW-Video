@@ -1,11 +1,10 @@
-# HOW-Video
-**Project Name:** HOW TO BE A HUMAN
+### **Project Name:** How to be a Human
 
-**Project Description:**
+### **Project Description:**
 
 For this video project, we've created a website that hosts a short video piece titled "How to be a Human". The video consists of three parts in which the narrator walk us through how to be a human in three steps. The first step discusses "how to breathe", the second part shows "how to walk", and the last part narrates "how to laugh". We aim to depict the most common human daily activities, actions we perform every day without conscious intentions. While the narrator instructs on being human, an alien attempts to mimic these actions throughout the tutorial. Our video project not only presents a fun portrayal of human daily activities but also raises an ethical question about the essence of humanity. On the website, we sought to create an engaging experience for users to contemplate what it truly means to be human and to assess their human skills.
 
-**Process:**
+### **Process:**
 
 ****************Script & Filming:****************
 
@@ -29,8 +28,8 @@ We also included a test section to enhance user engagement.
 
 Kyrie was responsible for the quiz part. Creating a quiz template was relatively simple, but developing a system to check submitted answers was a challenge. Initially, a direct comparison between the user's chosen answers and the correct ones was the method used. This approach did work, however, the code was unnecessarily long so he decided to take a different approach. Kyrie came up with the idea of putting values to each multiple choice. He did some research on how to put values in each choices. Once values (from a to e) were assigned to each option, an array for the correct answers were created. The system then compared the selected choices to the answers, incrementing the score for each correct match.
 
-**Reflection/Evaluation:**
+### **Reflection/Evaluation:**
 
-Reflecting on our project, "HOW TO BE A HUMAN," our primary goal was to create a video that was both entertaining and coherent. We're very content with how our project turned out to be. The video seamlessly blends humor and storytelling, ensuring a smooth experience that's both engaging and humorous. While the video offers a playful take on everyday human activities, the quiz component invites users to reflect more deeply on what it means to be human. And our quiz does pretty well on that, as well.
+Reflecting on our project, "How to be a Human," our primary goal was to create a video that was both entertaining and coherent. We're very content with how our project turned out to be. The video seamlessly blends humor and storytelling, ensuring a smooth experience that's both engaging and humorous. While the video offers a playful take on everyday human activities, the quiz component invites users to reflect more deeply on what it means to be human. And our quiz does pretty well on that, as well.
 
 The journey from concept to execution was a collaborative effort that paid off. As a team, we strived for this balance, working diligently to infuse each scene with both laughter and coherence. It wasn't always easy, but seeing the final result makes the effort worthwhile.
