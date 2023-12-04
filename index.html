@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Section Slider</title>
-  <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Slider</title>
+    <style>
+    @font-face {
+      font-family: 'customFont';
+      src: url('fonts/PTSerif-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'titleFont';
+      src: url('fonts/Syncopate-Bold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       overflow: hidden;
+      font-family: 'titleFont', sans-serif; /* Use your custom font here */
     }
 
     .section {
@@ -29,7 +44,23 @@
       align-items: flex-start;
     }
 
+    #section1 img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 150%;
+      max-height: 150%;
+    }
+
     #title-text{
+        font-size: 3em;
+        margin-block-end: 0.2em;
+        margin-block-start: 0;
+        font-family: 'titleFont', sans-serif; /* Use your custom font here */
+        text-shadow: 20px 10px 0px rgba(242, 201, 77, 1);
+    }
+
+    #title-intro{
         font-size: 3em;
         margin-block-end: 0.2em;
         margin-block-start: 0;
@@ -38,6 +69,7 @@
     #explain-text{
         font-size: 1em;
         margin-block-start: 0;
+        font-family: 'customFont', sans-serif; /* Use your custom font here */
     }
 
     #section2 {
@@ -66,28 +98,30 @@
       background-color: #F2C94D;
     }
   </style>
-</head>
-<body>
+  </head>
+  <body>
 
-  <div id="section1" class="section">
-    <p id="title-text">How To Be <br> a HUMAN</p>
-    <p id="explain-text">Join our intergalactic explorer on a comical <br> journey to know what it means to be a human</p>
-    <button onclick="slideToSection(2)">Next</button>
-  </div>
+    <div id="section1" class="section">
+      <p id="title-intro">How To Be </p> <br> <p id="title-text"> a HUMAN</p>
+      <p id="explain-text">Join our intergalactic explorer on a comical journey
+        to know <br> what it means to be a human</p>
+      <img src="img/WhatsApp Image 2023-12-04 at 01.09.46_fa08d946.jpg">
+      <button onclick="slideToSection(2)">Next</button>
+    </div>
 
-  <div id="section2" class="section" style="transform: translateY(100%)">
-    <video width="640" height="360" controls onended="showButton()">
-      <source src="your-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <button id="nextButton" style="display: none;" onclick="slideToSection(3)">Next</button>
-  </div>
+    <div id="section2" class="section" style="transform: translateY(100%)">
+      <video width="640" height="360" controls onended="showButton()">
+        <source src="your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button id="nextButton" style="display: none;" onclick="slideToSection(3)">Next</button>
+    </div>
 
-  <div id="section3" class="section" style="transform: translateY(200%)">
-    <p>Third Section Content</p>
-  </div>
+    <div id="section3" class="section" style="transform: translateY(200%)">
+      <p>Third Section Content</p>
+    </div>
 
-  <script>
+    <script>
     function slideToSection(sectionNumber) {
       const targetSection = document.getElementById(`section${sectionNumber}`);
       const yOffset = targetSection.offsetTop;
@@ -102,5 +136,5 @@
     }
   </script>
 
-</body>
+  </body>
 </html>
